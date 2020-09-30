@@ -1,0 +1,38 @@
+maro.rl.models.torch package
+============================
+
+Submodules
+----------
+
+maro.rl.models.torch.decision\_layers module
+--------------------------------------------
+
+.. automodule:: maro.rl.models.torch.decision_layers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.rl.models.torch.learning\_model module
+-------------------------------------------
+
+.. automodule:: maro.rl.models.torch.learning_model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.rl.models.torch.mlp\_representation module
+-----------------------------------------------
+
+.. automodule:: maro.rl.models.torch.mlp_representation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: maro.rl.models.torch
+   :members:
+   :undoc-members:
+   :show-inheritance:

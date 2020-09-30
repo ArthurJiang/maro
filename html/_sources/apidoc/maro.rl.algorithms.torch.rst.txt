@@ -1,0 +1,30 @@
+maro.rl.algorithms.torch package
+================================
+
+Submodules
+----------
+
+maro.rl.algorithms.torch.abs\_algorithm module
+----------------------------------------------
+
+.. automodule:: maro.rl.algorithms.torch.abs_algorithm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.rl.algorithms.torch.dqn module
+-----------------------------------
+
+.. automodule:: maro.rl.algorithms.torch.dqn
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: maro.rl.algorithms.torch
+   :members:
+   :undoc-members:
+   :show-inheritance:

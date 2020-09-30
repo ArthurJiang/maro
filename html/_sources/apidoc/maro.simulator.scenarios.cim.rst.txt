@@ -1,0 +1,62 @@
+maro.simulator.scenarios.cim package
+====================================
+
+Submodules
+----------
+
+maro.simulator.scenarios.cim.business\_engine module
+----------------------------------------------------
+
+.. automodule:: maro.simulator.scenarios.cim.business_engine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.simulator.scenarios.cim.common module
+------------------------------------------
+
+.. automodule:: maro.simulator.scenarios.cim.common
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.simulator.scenarios.cim.frame\_builder module
+--------------------------------------------------
+
+.. automodule:: maro.simulator.scenarios.cim.frame_builder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.simulator.scenarios.cim.matrix module
+------------------------------------------
+
+.. automodule:: maro.simulator.scenarios.cim.matrix
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.simulator.scenarios.cim.port module
+----------------------------------------
+
+.. automodule:: maro.simulator.scenarios.cim.port
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+maro.simulator.scenarios.cim.vessel module
+------------------------------------------
+
+.. automodule:: maro.simulator.scenarios.cim.vessel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: maro.simulator.scenarios.cim
+   :members:
+   :undoc-members:
+   :show-inheritance:

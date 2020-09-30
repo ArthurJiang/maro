@@ -1,0 +1,523 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Toolkit &#8212; latest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="../_static/fav32x32.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Distributed Toolkit" href="distributed_toolkit.html" />
+    <link rel="prev" title="Business Engine" href="business_engine.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.svg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">latest</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   What is MARO?
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Installation
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation/pip_install.html">
+   Package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation/playground.html">
+   Playground Docker Image
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation/grass_cluster_provisioning_on_azure.html">
+   Grass Cluster Provisioning on Azure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation/k8s_cluster_provisioning_on_azure.html">
+   K8S Cluster Provisioning on Azure
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Scenarios
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scenarios/container_inventory_management.html">
+   Container Inventory Management (CIM)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scenarios/citi_bike.html">
+   Bike Repositioning (Citi Bike)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Key Components
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="simulation_toolkit.html">
+   Simulation Toolkit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_model.html">
+   Data Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="event_buffer.html">
+   Event Buffer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="business_engine.html">
+   Business Engine
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   RL Toolkit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="distributed_toolkit.html">
+   Distributed Toolkit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="communication.html">
+   Distributed Communication
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="orchestration.html">
+   Distributed Orchestration
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  API Documents
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../apidoc/maro.html">
+   maro package
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/key_components/rl_toolkit.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/microsoft/maro"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/microsoft/maro/issues/new?title=Issue%20on%20page%20%2Fkey_components/rl_toolkit.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/microsoft/maro/edit/master/doc/source/key_components/rl_toolkit.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learner-and-actor">
+   Learner and Actor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Agent Manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Agent
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Algorithm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shapers">
+   Shapers
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="rl-toolkit">
+<h1>RL Toolkit<a class="headerlink" href="#rl-toolkit" title="Permalink to this headline">¶</a></h1>
+<p>MARO provides a full-stack abstraction for reinforcement learning (RL), which
+empowers users to easily apply predefined and customized components to different
+scenarios in a scalable way. The main abstractions include
+<a class="reference external" href="#learner-and-actor">Learner, Actor</a>, <a class="reference external" href="#agent-manager">Agent Manager</a>,
+<a class="reference external" href="#agent">Agent</a>, <a class="reference external" href="#algorithm">Algorithm</a>,
+<a class="reference external" href="#shapers">State Shaper, Action Shaper, Experience Shaper</a>, etc.</p>
+<div class="section" id="learner-and-actor">
+<h2>Learner and Actor<a class="headerlink" href="#learner-and-actor" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="../images/rl/overview.svg"><img alt="RL Overview" src="../_images/overview1.svg" /></a>
+<ul>
+<li><p><strong>Learner</strong> is the abstraction of the learnable policy. It is responsible for
+learning a qualified policy to improve the business optimized object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Train function of learner.</span>
+<span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_episodes</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">current_ep</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">total_episodes</span><span class="p">):</span>
+        <span class="n">models</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_trainable_agents</span><span class="o">.</span><span class="n">get_models</span><span class="p">()</span>
+        <span class="n">performance</span><span class="p">,</span> <span class="n">experiences</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_actor</span><span class="o">.</span><span class="n">roll_out</span><span class="p">(</span><span class="n">models</span><span class="o">=</span><span class="n">models</span><span class="p">,</span>
+                                                        <span class="n">epsilons</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_trainable_agents</span><span class="o">.</span><span class="n">explorer</span><span class="o">.</span><span class="n">epsilons</span><span class="p">,</span>
+                                                        <span class="n">seed</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_seed</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_trainable_agents</span><span class="o">.</span><span class="n">store_experiences</span><span class="p">(</span><span class="n">experiences</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_trainable_agents</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_trainable_agents</span><span class="o">.</span><span class="n">update_epsilon</span><span class="p">(</span><span class="n">performance</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Actor</strong> is the abstraction of experience collection. It is responsible for
+interacting with the environment and collecting experience. The experiences
+collected during interaction will be used for the training of the learners.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rollout function of actor.</span>
+<span class="k">def</span> <span class="nf">roll_out</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">models</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">epsilons</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_env</span><span class="o">.</span><span class="n">set_seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+
+    <span class="c1"># Assign epsilon</span>
+    <span class="k">if</span> <span class="n">epsilons</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_inference_agents</span><span class="o">.</span><span class="n">explorer</span><span class="o">.</span><span class="n">epsilons</span> <span class="o">=</span> <span class="n">epsilons</span>
+
+    <span class="c1"># Load models</span>
+    <span class="k">if</span> <span class="n">models</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_inference_agents</span><span class="o">.</span><span class="n">load_models</span><span class="p">(</span><span class="n">models</span><span class="p">)</span>
+
+    <span class="n">metrics</span><span class="p">,</span> <span class="n">decision_event</span><span class="p">,</span> <span class="n">is_done</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">is_done</span><span class="p">:</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inference_agents</span><span class="o">.</span><span class="n">choose_action</span><span class="p">(</span><span class="n">decision_event</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_env</span><span class="o">.</span><span class="n">snapshot_list</span><span class="p">)</span>
+        <span class="n">metrics</span><span class="p">,</span> <span class="n">decision_event</span><span class="p">,</span> <span class="n">is_done</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_inference_agents</span><span class="o">.</span><span class="n">on_env_feedback</span><span class="p">(</span><span class="n">metrics</span><span class="p">)</span>
+
+    <span class="n">experiences</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inference_agents</span><span class="o">.</span><span class="n">post_process</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_env</span><span class="o">.</span><span class="n">snapshot_list</span><span class="p">)</span>
+    <span class="n">performance</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_env</span><span class="o">.</span><span class="n">metrics</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;local&#39;</span><span class="p">:</span> <span class="n">performance</span><span class="p">},</span> <span class="n">experiences</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>Agent Manager<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The agent manager provides a unified interactive interface with the environment
+for RL agent(s). From the actor’s perspective, it isolates the complex dependencies
+of the various homogeneous/heterogeneous agents, so that the whole agent manager
+will behave just like a single agent. Besides that, the agent manager also plays
+the role of an agent assembler. It can assemble different RL agents according to
+the actual requirements, such as whether to share the underlying model, whether
+to share the experience pool, etc.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">assemble_agents</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+    <span class="c1"># Initialize experience pool instance.</span>
+    <span class="o">...</span>
+    <span class="c1"># Construct underlying learning model and related RL algorithm.</span>
+    <span class="o">...</span>
+    <span class="k">for</span> <span class="n">agent_id</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_agent_id_list</span><span class="p">:</span>
+        <span class="c1"># Assemble your agent here, load experience pool, RL algorithms, etc.</span>
+        <span class="c1"># You can control the experience pool and learning model sharing pattern, based on different assembling strategy.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_agent_dict</span><span class="p">[</span><span class="n">agent_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Furthermore, to well serve the distributed algorithm (scalable), the agent
+manager provides two kinds of working modes, which can be applied in different
+distributed components, such as inference mode in actor, training mode in learner.</p>
+<a class="reference external image-reference" href="../images/rl/agent_manager.svg"><img alt="Agent Manager" src="../_images/agent_manager.svg" width="750" /></a>
+<ul class="simple">
+<li><p>In <strong>inference mode</strong>, the agent manager is responsible to access and shape
+the environment state for the related agent, convert the model action to an
+executable environment action, and finally generate experiences from the
+interaction trajectory.</p></li>
+<li><p>In <strong>training mode</strong>, the agent manager will optimize the underlying model of
+the related agent(s), based on the collected experiences from in the inference mode.</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>Agent<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>An agent is a combination of (RL) algorithm, experience pool, and a set of
+non-algorithm-specific parameters (algorithm-specific parameters are managed by
+the algorithm module). Non-algorithm-specific parameters are used to manage
+experience storage, sampling strategies, and training strategies. Since all kinds
+of scenario-specific stuff will be handled by the agent manager, the agent is
+scenario agnostic.</p>
+<a class="reference external image-reference" href="../images/rl/agent.svg"><img alt="Agent" src="../_images/agent.svg" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Agent</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">algorithm</span><span class="p">:</span> <span class="n">Algorithm</span><span class="p">,</span> <span class="n">experience_pool</span><span class="p">:</span> <span class="n">SimpleStore</span><span class="p">,</span> <span class="n">params</span><span class="p">:</span> <span class="n">AgentParameters</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            RL agent class. It&#39;s a sandbox for the RL algorithm, scenarios specific details will be excluded out.</span>
+<span class="sd">            We focus on the abstraction algorithm development here.</span>
+<span class="sd">            Environment observation and decision events will be converted to a uniformed format before calling in.</span>
+<span class="sd">            And the output will be converted to an environment executable format before return back to the environment.</span>
+<span class="sd">            Its key responsibility is optimizing policy based on interaction with the environment.</span>
+
+<span class="sd">            Args:</span>
+<span class="sd">                name (str): The name of Agent.</span>
+<span class="sd">                algorithm: A concrete algorithm instance that inherits from AbstractAlgorithm. This is the centerpiece</span>
+<span class="sd">                           of the Agent class and is responsible for the most important tasks of an agent: choosing</span>
+<span class="sd">                           actions and optimizing models.</span>
+<span class="sd">                experience_pool (SimpleStore): A data store that stores experiences generated by the experience shaper.</span>
+<span class="sd">                params: A collection of hyper-parameters associated with the model training loop.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="o">...</span>
+</pre></div>
+</div>
+<p>Under the management of the agent manager:</p>
+<ul class="simple">
+<li><p>In <strong>inference mode</strong>, given the shaped model state as input, the agent will
+output a model action (then the agent manager will shape it into an executable
+environment action). Also, at the end of each episode, the agent will fill the
+shaped experiences into the experience pool.</p></li>
+<li><p>In <strong>training mode</strong>, the agent will train and update its model with the
+experiences sampled from its experience pool.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>Algorithm<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>The algorithm is the kernel abstraction of the RL formulation for a real-world
+problem. The model architecture, loss function, optimizer, and internal model
+update strategy are designed and parameterized here. In this module, two
+predefined interfaces must be implemented:</p>
+<a class="reference external image-reference" href="../images/rl/algorithm.svg"><img alt="Algorithm" src="../_images/algorithm.svg" width="650" /></a>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">choose_action</span></code> is used to make a decision based on a provided model state.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">train_on_batch</span></code> is used to trigger training and the policy update from external.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Algorithm</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">optimizer_opt</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">dict</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">],</span> <span class="n">loss_func_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">hyper_params</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            It&#39;s the abstraction of RL algorithm, which provides a uniformed policy interface, such choose_action, train_on_batch.</span>
+<span class="sd">            We also provide some predefined RL algorithm based on it, such DQN, A2C, etc. User can inherit form it to customized their own algorithms.</span>
+
+<span class="sd">            Args:</span>
+<span class="sd">                model_dict (dict): underlying models for the algorithm (e.g., for A2C,</span>
+<span class="sd">                                   model_dict = {&quot;actor&quot;: ..., &quot;critic&quot;: ...})</span>
+<span class="sd">                optimizer_opt (tuple or dict): tuple or dict of tuples of (optimizer_class, optimizer_params) associated</span>
+<span class="sd">                                               with the models in model_dict. If it is a tuple, the optimizer to be</span>
+<span class="sd">                                               instantiated applies to all trainable parameters from model_dict. If it</span>
+<span class="sd">                                               is a dict, the optimizer will be applied to the related model with the same key.</span>
+<span class="sd">                loss_func_dict (dict): loss function types associated with the models in model_dict.</span>
+<span class="sd">                hyper_params: algorithm-specific hyper-parameter set.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="shapers">
+<h2>Shapers<a class="headerlink" href="#shapers" title="Permalink to this headline">¶</a></h2>
+<p>MARO uses shapers to isolate business-related details and the algorithm modelings.
+It provides a clean interactive surface for RL agent(s). The followings are the
+three usually used shapers in RL formulations:</p>
+<ul class="simple">
+<li><p><strong>State shaper</strong>: Given a decision event, the state shaper will extract relevant
+temporal-spatial information from the environment (snapshot list) for the decision
+agent. The output usually follows a format that can be directly inputted to the
+underlying algorithm.</p></li>
+<li><p><strong>Action shaper</strong>: Once the agent outputs a decision action, the agent manager
+will call the action shaper to convert it into an executable environment action.
+Then, the executable environment action will be sent to the environment’s <code class="docutils literal notranslate"><span class="pre">step</span></code>
+function to wake the sleeping environment.</p></li>
+<li><p><strong>Experience shaper</strong>: At the end of each episode, the experience shaper will
+convert the agent’s interaction trajectory to formatted learnable experiences,
+which usually contain the fields of <code class="docutils literal notranslate"><span class="pre">state</span></code>, <code class="docutils literal notranslate"><span class="pre">action</span></code>, and <code class="docutils literal notranslate"><span class="pre">reward</span></code>. For the
+storage of experiences, MARO use in-memory KV store. It can not only provide an
+extensible experience interface but also give the full control of constructing
+the algorithm-specific experience to users. As for the reward, since there are
+multiple optimized business metrics in a real-world business scenario, and the
+key performance index varies for different needs, how to calculate a simple
+scalar reward is not reasonable for a fixed pattern. So we left the reward
+definition to the end-user, and we only provide the raw business metrics in MARO.
+You can pass a reward function (e.g., a lambda) that directly calculates a reward
+based on these business metrics, or implement a helper method within the class.
+We recommend the latter one for complicated reward computations that require
+information from the environment trajectory and longer historical information
+(from the environment snapshot list). The actual shaping logic is encapsulated
+in the <code class="docutils literal notranslate"><span class="pre">_shape()</span></code> method, which converts the entire transition trajectory to
+experiences. By default, we provide a <code class="docutils literal notranslate"><span class="pre">k-step</span> <span class="pre">return</span></code> experience shaper for
+general usage, but for better performance, you need to carefully design this part
+according to your scenario and needs.</p></li>
+</ul>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="business_engine.html" title="previous page">Business Engine</a>
+    <a class='right-next' id="next-link" href="distributed_toolkit.html" title="next page">Distributed Toolkit</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By MARO Team<br/>
+        
+            &copy; Copyright 2020 Microsoft.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>
